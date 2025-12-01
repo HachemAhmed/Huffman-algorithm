@@ -1,8 +1,6 @@
 import os
-# Importa as funções do arquivo huffman.py que acabamos de criar
 import huffman 
 
-# Configurações de Arquivo
 INPUT_FILE = 'data/input.dat'
 OUTPUT_FILE = 'data/output.dat'
 
@@ -20,7 +18,6 @@ def process_texts():
         print("Erro de Encoding: Tente salvar o input.dat como UTF-8.")
         return
 
-    # Separa os textos por linha em branco
     raw_texts = content.split('\n\n')
     texts = [t.strip() for t in raw_texts if t.strip()]
 
