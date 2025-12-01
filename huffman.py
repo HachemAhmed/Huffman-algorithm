@@ -5,7 +5,7 @@ from collections import Counter
 class HuffmanNode:
     """Representa um nó na árvore de Huffman."""
     def __init__(self, char, freq):
-        self.char = char  # Palavra ou Símbolo
+        self.char = char  
         self.freq = freq
         self.left = None
         self.right = None
