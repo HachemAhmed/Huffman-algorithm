@@ -1,9 +1,16 @@
 import os
 import huffman 
 
-INPUT_FILE = 'data/input.dat'
-OUTPUT_FILE = 'data/output.dat'
+# Configurações de Arquivo
+# Pega o diretório onde este arquivo (main.py) está: .../Huffman-algorithm/src
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
+# Sobe um nível para achar a raiz do projeto: .../Huffman-algorithm
+PROJECT_ROOT = os.path.dirname(CURRENT_DIR)
+
+# Monta o caminho para a pasta data independente de onde o terminal esteja
+INPUT_FILE = os.path.join(PROJECT_ROOT, 'data', 'input.dat')
+OUTPUT_FILE = os.path.join(PROJECT_ROOT, 'data', 'output.dat')
 def process_texts():
     # 1. Verificação de Segurança
     if not os.path.exists(INPUT_FILE):
