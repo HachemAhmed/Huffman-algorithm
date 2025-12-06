@@ -1,6 +1,6 @@
 # Huffman Algorithm (Word-Based) 📚
 
-Este projeto implementa o **Algoritmo de Huffman** para compressão de textos, utilizando **palavras** como símbolos base, em vez de caracteres individuais. Desenvolvido como parte da avaliação prática de Estruturas de Dados no **CEFET-MG**.
+Este projeto implementa o **Algoritmo de Huffman** para compressão de textos, utilizando **palavras** como símbolos base, em vez de caracteres individuais. Desenvolvido como parte da avaliação prática de Algoritmos e Estruturas de Dados no **CEFET-MG**.
 
 ## 📋 Descrição do Projeto
 
@@ -32,7 +32,7 @@ O programa gera um relatório completo (`output.dat`) contendo:
 
 3.  **Execute o programa:**
 ```bash
-    python3 main.py
+    python3 src/main.py
 ```
 
 4.  **Verifique o resultado:**
@@ -44,24 +44,25 @@ O programa gera um relatório completo (`output.dat`) contendo:
 ## 📂 Estrutura do Projeto
 ```
 Huffman-algorithm/
-├── main.py          # Controlador principal (gerencia I/O e fluxo)
-├── huffman.py       # Lógica do algoritmo (árvore e compressão)
+├── src/
+│   ├── main.py          # Controlador principal (gerencia I/O e fluxo)
+│   └── huffman.py       # Lógica do algoritmo (árvore e compressão)
 ├── data/
-│   ├── input.dat    # Textos de entrada
-│   └── output.dat   # Resultado da compressão (gerado automaticamente)
+│   ├── input.dat        # Textos de entrada
+│   └── output.dat       # Resultado da compressão (gerado automaticamente)
 └── README.md
 ```
 
 ## 🔧 Módulos Implementados
 
-### `main.py`
+### `src/main.py`
 Controlador responsável por:
 - Leitura do arquivo `input.dat`
 - Processamento de múltiplos textos
 - Geração do relatório em `output.dat`
 - Tratamento de erros de encoding
 
-### `huffman.py`
+### `src/huffman.py`
 Contém a implementação completa do algoritmo:
 - **`HuffmanNode`**: Classe que representa cada nó da árvore
 - **`get_frequencies()`**: Calcula frequência de palavras e pontuações
@@ -105,7 +106,6 @@ executa: 0111
 
 **Ahmed Hachem**  
 Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG)  
-Dezembro de 2025
 
 ---
 
