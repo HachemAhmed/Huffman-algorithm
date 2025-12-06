@@ -2,14 +2,6 @@
 
 Este projeto implementa o **Algoritmo de Huffman** para compressão de textos, utilizando **palavras** como símbolos base, em vez de caracteres individuais. Desenvolvido como parte da avaliação prática de Estruturas de Dados no **CEFET-MG**.
 
-## 🎓 Contexto Acadêmico
-
-**Disciplina:** Estruturas de Dados  
-**Professor:** Michel Pires  
-**Instituição:** Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG)  
-**Data de Entrega:** 06/12/2025  
-**Valor:** 10 pontos
-
 ## 📋 Descrição do Projeto
 
 O objetivo deste software é ler um conjunto de textos, calcular a frequência de ocorrência de cada palavra e gerar uma árvore binária de Huffman para criar códigos binários otimizados. Palavras mais frequentes recebem códigos menores, resultando na compressão dos dados.
